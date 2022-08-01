@@ -42,7 +42,7 @@ export const WrapperTab = styled(Tab) `
     }
 `;
 
-WrapperTabList.tabsRole = 'Tab';
+WrapperTab.tabsRole = 'Tab';
 
 export const WrapperTabPanel = styled(TabPanel) `
     padding: 16px;
@@ -54,5 +54,4 @@ export const WrapperTabPanel = styled(TabPanel) `
         display: block;
     }
 `;
-
-WrapperTabList.tabsRole = 'TabPanel';
+WrapperTabPanel.tabsRole = 'TabPanel';
