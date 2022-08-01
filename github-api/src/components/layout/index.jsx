@@ -1,6 +1,6 @@
 import React, { Children } from "react";
 
-function Layout({ children }) {
+const Layout = ({ children }) => {
     return (
         <section>
             <header>
@@ -8,7 +8,7 @@ function Layout({ children }) {
                 {children}
             </header>
         </section>
-    )
+    );
 }
 
 export default Layout
