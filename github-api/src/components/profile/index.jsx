@@ -4,16 +4,15 @@ import * as S from './styled'
 const Profile = () => {
   return (
     <S.Wrapper>
-        <S.WrapperImage 
-            src="https://avatars.githubusercontent.com/u/55366815?v=4" 
-            alt="User Avatar"
-        />
+        <S.WrapperImage src="https://avatars.githubusercontent.com/u/55366815?v=4" alt="User Avatar"/>
         <S.WrapperInfoUser>
             <div>
                 <h1>Marcelo Moura</h1>
                 <S.WrapperUsername>
                     <h3>Username: </h3>
-                    <span>marcelogoodtrip</span>
+                    <a href="https://github.com/marcelogoodtrip" target="blank" rel="norefer">
+                        marcelogoodtrip
+                    </a>
                 </S.WrapperUsername>
             </div>
             <S.WrapperStatusCount>
@@ -22,7 +21,7 @@ const Profile = () => {
                     <span>5</span>
                 </div>
                 <div>
-                    <h4>Starreds</h4>
+                    <h4>Starred</h4>
                     <span>5</span>
                 </div>
                 <div>
