@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import useGithub from '../../hooks/github-hooks';
+import ReposIcon from '../../icons/ReposIcon';
+import StarredIcon from '../../icons/StarredIcon';
 import RepositoryItem from '../repository-item';
 import * as S from './styled';
 
@@ -25,8 +27,12 @@ export const Repositories = () => {
         selectedTabPanelClassName='is-selected'
     >
         <S.WrapperTabList>
-            <S.WrapperTab>Repositories</S.WrapperTab>
-            <S.WrapperTab>Starred</S.WrapperTab>
+            <S.WrapperTab>
+                Repositories <ReposIcon />
+            </S.WrapperTab>
+            <S.WrapperTab>
+                Starred <StarredIcon />
+            </S.WrapperTab>
         </S.WrapperTabList>
         <S.WrapperTabPanel>
             <S.WrapperList>
