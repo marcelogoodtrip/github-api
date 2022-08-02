@@ -3,9 +3,9 @@ import { useContext } from 'react';
 
 const useGithub = () => {
   
-    const {githubState} = useContext( GithubContext );
+    const {githubState, getUser, getUserRepos, getUserStarred} = useContext( GithubContext );
   
-    return {githubState};
+    return {githubState, getUser, getUserRepos, getUserStarred};
 };
 
 export default useGithub;
